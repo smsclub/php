@@ -4,7 +4,7 @@
      @url www.smsclub.mobi
      @copyright 2016
     */
-    $url = 'https://gate.smsclub.mobi/http/?';
+    $url = 'https://gate.smsclub.mobi/token/?';
     $username = 'user';    // string User ID (phone number)
     $token = 'token';        // string token
     $from = 'SMS CLUB';        // string, sender id (alpha-name) (as long as your alpha-name is not spelled out, it is necessary to use it)
