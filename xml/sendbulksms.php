@@ -2,13 +2,14 @@
     /*
      @author SMS CLUB 
      @url www.smsclub.mobi
-     @copyright 2016
+     @copyright 2017
     */
     $login = 'user';    // string User ID (phone number)
     $password = 'pass';        // string Password
-    $alphaName = 'SMS CLUB';        // string, sender id (alpha-name) (as long as your alpha-name is not spelled out, it is necessary to use it)
-    $abonent = '0675126767;0997777662';
-    $text = 'СМС через XML-шлюз от SMS CLUB';
+    $alphaName = 'gsm1';        // string, sender id (alpha-name) (as long as your alpha-name is not spelled out, it is necessary to use it)
+    $abonent = '380675126767;380997777662';
+    $text = iconv('utf-8','windows-1251', 'СМС через XML-шлюз от SMS CLUB');
+    $text = urlencode($text);       // string Message
         
     $xml = "<?xml version='1.0' encoding='utf-8'?><request_sendsms><username><![CDATA[".$login."]]></username><password><![CDATA[".$password."]]></password><from><![CDATA[".$alphaName."]]></from><to><![CDATA[".$abonent."]]></to><text><![CDATA[".$text."]]></text></request_sendsms>";
     $ch = curl_init();

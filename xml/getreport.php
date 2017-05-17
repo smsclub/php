@@ -2,7 +2,7 @@
     /*
      @author SMS CLUB 
      @url www.smsclub.mobi
-     @copyright 2016
+     @copyright 2017
     */
     $login = 'user';    // string User ID (phone number)
     $password = 'pass';        // string Password
