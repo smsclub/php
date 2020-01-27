@@ -8,12 +8,10 @@
     $password = 'pass';        // string Password
     $alphaName = 'gsm1';        // string, sender id (alpha-name) (as long as your alpha-name is not spelled out, it is necessary to use it)
     $abonent1 = '380997777662';
-    $text = iconv('utf-8','windows-1251', 'СМС через XML-шлюз от SMS CLUB');
-    $text1 = urlencode($text);       // string Message
+    $text = 'СМС через XML-шлюз от SMS CLUB';
     
     $abonent2 = '380675126767';
-    $text = iconv('utf-8','windows-1251', 'SMS via XML-gateway from SMS CLUB');
-    $text2 = urlencode($text);       // string Message
+    $text = 'SMS via XML-gateway from SMS CLUB';
     
     $xml = "<?xml version='1.0' encoding='utf-8'?><request_sendsms><username><![CDATA[".$login."]]></username><password><![CDATA[".$password."]]></password><from><![CDATA[".$alphaName."]]></from><to><![CDATA[".$abonent1."]]></to><text><![CDATA[".$text1."]]></text><to><![CDATA[".$abonent2."]]></to><text><![CDATA[".$text2."]]></text></request_sendsms>";    
     $ch = curl_init();
