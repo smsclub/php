@@ -7,13 +7,13 @@
  * @author SMS CLUB
  */
 
-$token = 'vRpHChl3YDut_KN';
-$url = 'https://im.misha.dev.smsclub.mobi/sms/send';
+$token = 'your_bearer_token';
+$url = 'https://im.smsclub.mobi/sms/send';
 
 $data = json_encode([
-    'phone' => ['380990244671'],
-    'message' => 'Test test',
-    'src_addr' => 'Shop Zakaz'
+    'phone' => ['380938226388'],
+    'message' => 'Your message',
+    'src_addr' => 'SenderName'
 ]);
 
 $ch = curl_init();
