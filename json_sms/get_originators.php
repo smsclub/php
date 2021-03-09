@@ -7,8 +7,8 @@
  * @author SMS CLUB
  */
 
-$token = 'vRpHChl3YDut_KN';
-$url = 'https://im.misha.dev.smsclub.mobi/sms/originator';
+$token = 'your_bearer_token';
+$url = 'https://im.smsclub.mobi/sms/originator';
 
 $ch = curl_init();
 
