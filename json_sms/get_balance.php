@@ -7,8 +7,8 @@
  * @author SMS CLUB
  */
 
-$token = 'vRpHChl3YDut_KN';
-$url = 'https://im.misha.dev.smsclub.mobi/sms/balance';
+$token = 'your_bearer_token';
+$url = 'https://im.smsclub.mobi/sms/balance';
 
 $ch = curl_init();
 
