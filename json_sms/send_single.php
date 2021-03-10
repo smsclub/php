@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This example demonstrates how to send sms via JSON API
+ * This example demonstrates how to send single sms via JSON API
  *
  * @url smsclub.mobi
  * @author SMS CLUB
