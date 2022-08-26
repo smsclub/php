@@ -1,25 +1,23 @@
 <?php
 
 /**
- * This example demonstrates how to send bulk viber messages via JSON API
+ * This example demonstrates how to send vibr+sms via JSON API
  *
  * @url smsclub.mobi
  * @author SMS CLUB
  */
- 
  
         $token = 'your_bearer_token';
         $url = 'https://im.smsclub.mobi/vibers/send';
 
         $data = json_encode([
             'sender' => 'Tesst',
+            'senderSms' => 'Shop Zakaz',
             'phones' => [
-                    '380961921777' , '380961921778' , '380961921779'
+                    '380961921717' , '380961921728' , '380961921739'
                 ],
             'message' => 'test message API',
-            "button_txt" => "Сюда",
-            "button_url" => "https://smsclub.mobi/",
-            "picture_url" => "https://smsclub.mobi/img/og_logo.jpg",
+            'messageSms' => 'test message SMS',
         ]);
 
 
